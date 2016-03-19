@@ -1,0 +1,42 @@
+<setup>
+  <block title="KoboToolbox API URL" endpoint="admin/conf-app" entity="kobotoolbox">
+    <input field="kobo_api_url">
+      <label>URL</label>
+      <type>text</type>
+    </input>
+  </block>
+  <block title="KoboToolbox API Username" endpoint="admin/conf-app" entity="kobotoolbox">
+    <input field="kobo_api_username">
+      <label>Username</label>
+      <type>text</type>
+    </input>
+  </block>
+  <block title="KoboToolbox API Password" endpoint="storage/passwords" eai_strict="false" entity="kobo_api_password*">
+    <input field="password">
+      <label>Password</label>
+      <type>password</type>
+    </input>
+  </block>
+  <block title="Splunk HTTP Event Collector URL" endpoint="admin/conf-app" entity="kobotoolbox">
+    <input field="splunk_ec_url">
+      <label>URL</label>
+      <type>text</type>
+    </input>
+  </block>
+  <block title="Splunk HTTP Event Collector Token" endpoint="storage/passwords" eai_strict="false" entity="splunk_ec_token*">
+    <input field="password">
+      <label>Password</label>
+      <type>password</type>
+    </input>
+  </block>
+  <block title="Scripted Input Configuration" endpoint="admin/script" entity=".%252Fbin%252Fkobo_splunker.py">
+    <input field="interval">
+      <label>Polling Interval (sec)</label>
+      <type>text</type>
+    </input>
+    <input field="enabled">
+      <label>Enable</label>
+      <type>bool</type>
+    </input>
+  </block>
+</setup>
