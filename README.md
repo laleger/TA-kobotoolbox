@@ -1,5 +1,7 @@
 # TA-kobotoolbox
 
+Splunk Technology Add-on (TA) for KoBoToolbox
+
 NOTE: This TA makes use of the Splunk HTTP Event Collector and the new passwords.conf file and therefore requires Splunk version 6.3
 
 ## Installation instructions
@@ -14,5 +16,5 @@ NOTE: This TA makes use of the Splunk HTTP Event Collector and the new passwords
 * kobotoolbox:status - Provides status from the main kobo_splunker.py script, additional verbosity can be enabled by changing the debug variable value to 1
 * kobotoolbox:submission - Provides raw json data from survey submissions
 
-Enjoy! If you have any questions or recommendations on how this TA could be improved, please contact me at laleger@gmail.com
+Enjoy! If you have any questions or recommendations on how this TA could be improved, please contact me at lance@datageek.org
 
